@@ -1,29 +1,34 @@
 <form [formGroup]="InsertClientForm" (ngSubmit) = "OnInsertClient()">
-    <div>
+    <div class="container">
         <h2> Add Client and Itinerary </h2>
         <form> </form>
             <div class="form-group">
             <label for="clientName">Client Name:</label>
-             <input type="text" class="form-control" id="clientName" placeholder="Enter name" formControlName="clientName">
+             <input type="text" class="form-control" id="clientName" placeholder="Enter name" formControlName="clientName"><br>
           
             <label for="projectName">Project Name:</label>
-            <input type="text" class="form-control" id="projectName" placeholder="Enter project name" formControlName="projectName">
+            <input type="text" class="form-control" id="projectName" placeholder="Enter project name" formControlName="projectName"><br>
+
+            <label for="agenda">Agenda:</label>
+            <input type="text" class="form-control" id="agenda" placeholder="Enter agenda" formControlName="agenda"><br>
           
             <label for="arrivalDate">Arrival Date:</label>
-            <input type="date" class="form-control" id="arrivalDate" formControlName="arrivalDate">
+            <input type="date" class="form-control" id="arrivalDate" formControlName="arrivalDate"><br>
           
             <label for="deptDate">Departure Date:</label>
-            <input type="date" class="form-control" id="deptDate" formControlName="deptDate">
+            <input type="date" class="form-control" id="deptDate" formControlName="deptDate"><br>
           
-            <label for="projectName">Agenda:</label>
-            <select>
+            <label for="account">Account:</label>
+            <input type="text" class="form-control" id="account" formControlName="account"><br>
+
+            <!-- <select>
                 <option value="CITI" >CITI</option>
                            <option value="Bank of Montreal">Bank of Montreal</option>
                               <option value="Bank of Canada">Bank of Canada</option>
                               <option value="HDFC">HDFC</option>
                               <option value="Others">Others</option>
-              </select> 
-           </div>
+              </select>  -->
+           </div><br>
           
           <button type="submit" class="btn btn-primary">Submit</button>
          

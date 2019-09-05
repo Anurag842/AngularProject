@@ -6,6 +6,7 @@ import { Routes } from '@angular/router';
 import { ErrorComponent } from '../error/error.component';
 import { ViewClientComponent } from '../view-client/view-client.component';
 import { AddClientComponent } from '../add-client/add-client.component';
+import { FormsModule } from '@angular/forms';
 
 
 export const RoutesTable:
@@ -19,7 +20,7 @@ Routes =
 @NgModule({
   declarations: [AddClientComponent, ViewClientComponent, ErrorComponent],
   imports: [
-    CommonModule, ReactiveFormsModule, RouterModule
+    CommonModule, ReactiveFormsModule, RouterModule, FormsModule
   ],
   exports: [AddClientComponent, ViewClientComponent, ErrorComponent]
 })
