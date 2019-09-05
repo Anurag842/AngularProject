@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-dark table-striped">
+  <tr>
+    <th>Client Name</th>
+    <th>Project Name</th>
+    <th>Arrival Date</th>
+    <th>Departure Date</th>
+    <th>Agenda</th>
+    <th>Account</th>
+    <th>View</th>
+ 
+</tr>
+
+<tr *ngFor="let client of clients;index as i">
+      <td>{{client.clientName}}</td>
+      <td>{{client.projectName}}</td>
+      <td>{{client.stringarrive}}</td>
+      <td>{{client.stringdepart}}</td>
+      <td>{{client.agenda}}</td>
+      <td>{{client.account}}</td>
+      <!-- <td><a class="nav-link" [routerLink]="['/searchEmployeeName',Employee.Id]">see Details</a></td>  -->
+      </tr>  
+  
+  </table>
+  </div>

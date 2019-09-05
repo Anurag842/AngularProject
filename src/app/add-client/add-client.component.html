@@ -1,0 +1,32 @@
+<form [formGroup]="InsertClientForm" (ngSubmit) = "OnInsertClient()">
+    <div>
+        <h2> Add Client and Itinerary </h2>
+        <form> </form>
+            <div class="form-group">
+            <label for="clientName">Client Name:</label>
+             <input type="text" class="form-control" id="clientName" placeholder="Enter name" formControlName="clientName">
+          
+            <label for="projectName">Project Name:</label>
+            <input type="text" class="form-control" id="projectName" placeholder="Enter project name" formControlName="projectName">
+          
+            <label for="arrivalDate">Arrival Date:</label>
+            <input type="date" class="form-control" id="arrivalDate" formControlName="arrivalDate">
+          
+            <label for="deptDate">Departure Date:</label>
+            <input type="date" class="form-control" id="deptDate" formControlName="deptDate">
+          
+            <label for="projectName">Agenda:</label>
+            <select>
+                <option value="CITI" >CITI</option>
+                           <option value="Bank of Montreal">Bank of Montreal</option>
+                              <option value="Bank of Canada">Bank of Canada</option>
+                              <option value="HDFC">HDFC</option>
+                              <option value="Others">Others</option>
+              </select> 
+           </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+         
+      </div> 
+
+</form>
