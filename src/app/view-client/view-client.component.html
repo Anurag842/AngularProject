@@ -1,7 +1,7 @@
-<br><br>
+<br><br><br>
 <div class="container">
-    <table class="table table-dark table-striped">
-  <tr>
+<table class="table table-hover table-striped">
+  <thead class="thead-dark">
     <th>Client Name</th>
     <th>Project Name</th>
     <th>Arrival Date</th>
@@ -10,8 +10,8 @@
     <th>Account</th>
     <th>View</th>
  
-</tr>
-
+  </thead>
+<tbody>
 <tr *ngFor="let client of clients;index as i">
       <td>{{client.clientName}}</td>
       <td>{{client.projectName}}</td>
@@ -21,6 +21,6 @@
       <td>{{client.account}}</td>
       <!-- <td><a class="nav-link" [routerLink]="['/searchEmployeeName',Employee.Id]">see Details</a></td>  -->
       </tr>  
-  
+    </tbody>
   </table>
   </div>

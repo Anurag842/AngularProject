@@ -11,8 +11,35 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
 </head>
 <body>
   <app-root></app-root>
 </body>
+
+<script>
+
+
+    $(document).ready(function() {
+   $('#link1').click(function(e) 
+     { 
+       $("#link2").css("background-color","white");
+       $("#link1").css("background-color", "#66b3ff");
+       
+     });
+
+     $('#link2').click(function(e) 
+     { 
+       
+       $("#link1").css("background-color","white");
+        $("#link2").css("background-color", "#66b3ff");
+       
+      });
+
+      $("#link1").click(); 
+});
+</script>
 </html>

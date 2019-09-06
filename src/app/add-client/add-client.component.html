@@ -1,5 +1,9 @@
-<form [formGroup]="InsertClientForm" (ngSubmit) = "OnInsertClient()">
-    <div class="container">
+ <br>
+ <br>
+ <br>
+ <br>
+ <form [formGroup]="InsertClientForm" (ngSubmit) = "OnInsertClient()">
+    <div class="container" style="position:relative; z-index:10">
         <h2> Add Client and Itinerary </h2>
         <form> </form>
             <div class="form-group">
@@ -31,9 +35,42 @@
                               <option value="Others">Others</option>
               </select>  
            </div><br>
-          
-          <button type="submit" class="btn btn-primary">Submit</button>
-         
+           <hr>
+          <div>
+              
+              
+              <form>
+                   
+             
+                    <label for="arrivalDate">Start time:</label>
+                    <input type="datetime-local" class="form-control" id="starttime"><br>
+                  
+                    <label for="deptDate">End time:</label>
+                    <input type="datetime-local" class="form-control" id="endtime"><br>
+                    <div align="center">
+                            <button type="submit" class="btn btn-success">Add event</button>
+                    </div>
+              </form>
+            
+            
+          </div>
+          <hr>
+         <div> View Events</div>
+         <table class="table">
+             <thead>
+                 <th>Event Type</th>
+                <th>Event Start time</th>
+                <th>Event End time</th>
+             </thead>
+             <tbody>
+
+             </tbody>
+         </table>
+          <div align="center">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        
       </div> 
 
 </form>
+
