@@ -9,11 +9,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModModule, RoutesTable} from './router-mod/router-mod.module';
 import { NavigateComponent } from './navigate/navigate.component';
+import { ViewEventComponent } from './view-event/view-event.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,NavigateComponent
+    AppComponent,NavigateComponent, ViewEventComponent
     
   ],
   imports: [

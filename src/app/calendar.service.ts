@@ -3,6 +3,7 @@ import { Observable, throwError} from 'rxjs';
 import { Client } from './client';
 import {HttpClient, HttpHeaders, HttpParams, HttpResponse, HttpRequest} from '@angular/common/http';
 import {catchError, map} from 'rxjs/operators';
+import { Events } from './events';
 
 
 @Injectable({
@@ -10,6 +11,8 @@ import {catchError, map} from 'rxjs/operators';
 })
 export class CalendarService {
   clients: Client[];
+  events: Events[];
+  event: Events;
 
   constructor(private _http: HttpClient) { }
 
@@ -32,4 +35,14 @@ export class CalendarService {
 }
 private _options = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
+
+getEventsById(): Observable<Events[]>
+{
+  return this._http.get<Events[]>("");
+}
+InsertEvent( event: Event): Observable<any>
+{
+  return this._http.post("", event).pipe(map((res: Response) => res), catchError(this.errorhandler));
+}
+
 }
