@@ -1,0 +1,18 @@
+<br><br><br>
+<div class="container">
+<table class="table table-hover table-striped">
+  <thead class="thead-dark">
+    <th>Event Name</th>
+    <th>Start time</th>
+    <th>End time</th>
+ 
+  </thead>
+<tbody>
+<tr *ngFor="let event of events;index as i">
+      <td>{{event.title}}</td>
+      <td>{{event.start | date: 'dd/MM/yyyy'}}</td>
+      <td>{{event.end | date: 'dd/MM/yyyy'}}</td>
+      </tr>  
+    </tbody>
+  </table>
+  </div>

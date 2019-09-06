@@ -20,7 +20,8 @@
       <td>{{client.agenda}}</td>
       <td>{{client.account}}</td>
       <!-- <td><a class="nav-link" [routerLink]="['/viewAllEvents',Client.clientId]">View Itinerary</a></td> -->
-      <td ><a href="/productdetails/client.clientId">View Itinerary</a></td>
+     <td> <a [routerLink]="['/viewevents', client.clientId]">View Itinerary </a> </td>
+      <!-- <td ><a routerLink="['/viewevents/',clients.clientId]">View Itinerary</a></td> -->
       </tr>  
     </tbody>
   </table>

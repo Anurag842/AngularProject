@@ -36,9 +36,9 @@ export class CalendarService {
 private _options = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-getEventsById(): Observable<Events[]>
+getEventsById(clientId: number): Observable<Events[]>
 {
-  return this._http.get<Events[]>("");
+  return this._http.get<Events[]>("/EventBasedCalendar/viewClientEvent/" + clientId);
 }
 InsertEvent( event: Event): Observable<any>
 {
