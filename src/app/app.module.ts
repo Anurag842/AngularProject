@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModModule, RoutesTable} from './router-mod/router-mod.module';
 import { NavigateComponent } from './navigate/navigate.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { NavigateComponent } from './navigate/navigate.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule , FormsModule, RouterModModule, ReactiveFormsModule, HttpClientModule, RouterModule.forRoot(RoutesTable)
+    AppRoutingModule , FormsModule, RouterModModule, ReactiveFormsModule, HttpClientModule, RouterModule.forRoot(RoutesTable), BrowserAnimationsModule 
     //RouterModule.forRoot()
   ],
   providers: [],

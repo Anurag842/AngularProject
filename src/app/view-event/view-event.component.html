@@ -1,4 +1,4 @@
-<br><br><br>
+ <!-- <br><br><br>
 <div class="container">
 <table class="table table-hover table-striped">
   <thead class="thead-dark">
@@ -15,4 +15,20 @@
       </tr>  
     </tbody>
   </table>
+  </div> -->
+ 
+  <br><br><br><br><br><br>
+   <!-- <div *ngFor="let x of events">
+      {{x.title}}{{x.start|date}}{{x.end|date}}
   </div>
+  {{events}}  -->
+
+  <div class="container">
+  <full-calendar
+  defaultView="dayGridMonth"
+  [plugins]="calendarPlugins"
+  [weekends]="true"
+  [events]=events
+>
+</full-calendar>
+ 

@@ -8,6 +8,8 @@ import { ViewClientComponent } from '../view-client/view-client.component';
 import { AddClientComponent } from '../add-client/add-client.component';
 import { FormsModule } from '@angular/forms';
 import { ViewEventComponent } from '../view-event/view-event.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+
 
 
 export const RoutesTable:
@@ -22,8 +24,8 @@ Routes =
 @NgModule({
   declarations: [AddClientComponent, ViewClientComponent, ErrorComponent, ViewEventComponent],
   imports: [
-    CommonModule, ReactiveFormsModule, RouterModule, FormsModule
+    CommonModule, ReactiveFormsModule, RouterModule, FormsModule, FullCalendarModule 
   ],
-  exports: [AddClientComponent, ViewClientComponent, ErrorComponent, ViewEventComponent]
+  exports: [AddClientComponent, ViewClientComponent, ErrorComponent, ViewEventComponent,]
 })
 export class RouterModModule { }
